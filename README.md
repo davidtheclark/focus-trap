@@ -71,6 +71,7 @@ Returns a new focus trap on `element`.
 - **returnFocusOnDeactivate** {boolean}: Default: `true`. If `false`, when the trap is deactivated, focus will *not* return to the element that had focus before activation.
 - **setReturnFocus** {element|string|function}: By default, focus trap on deactivation will return to the element that was focused before activation. With this option you can specify another element to programmatically receive focus after deactivation. Can be a DOM node, or a selector string (which will be passed to `document.querySelector()` to find the DOM node), or a function that returns a DOM node.
 - **allowOutsideClick** {function}: If set and returns `true`, a click outside the focus trap will not be prevented, even when `clickOutsideDeactivates` is `false`.
+- **document** {Document}: Default: `window.document`. Document where the focus trap will be active.
 
 ### focusTrap.activate([activateOptions])
 

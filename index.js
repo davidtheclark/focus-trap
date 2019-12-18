@@ -38,7 +38,7 @@ var activeFocusTraps = (function() {
 })();
 
 function focusTrap(element, userOptions) {
-  var doc = document;
+  var doc = userOptions.document || document;
   var container =
     typeof element === 'string' ? doc.querySelector(element) : element;
 

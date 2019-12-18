@@ -62,6 +62,11 @@ declare module "focus-trap" {
     clickOutsideDeactivates?: boolean;
 
     allowOutsideClick?: (event: MouseEvent) => boolean;
+
+    /**
+     * Default: `window.document`. Document where the focus trap will be active.
+     */
+    document?: Document;
   }
 
   type ActivateOptions = Pick<Options, "onActivate">;
