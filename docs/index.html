@@ -728,6 +728,36 @@
       </p>
     </div>
 
+    <div id="demo-positive-tabindex">
+      <h2 id="positive-tabindex-heading">Positive tabindex</h2>
+      <p>
+        This trap has a button with a <code>tabindex</code> attribute set to a
+        number greater than zero. The focus trap handles this simply by relying
+        on the tab order determined by <code>tabbable</code>, the library it
+        uses to determine what nodes can be tabbed to within each container.
+      </p>
+      <p>
+        <button id="activate-positive-tabindex">
+          activate trap
+        </button>
+      </p>
+      <div id="positive-tabindex" class="trap">
+        <p>
+          <button>no tabIndex</button>
+          <button tabindex="1">tabIndex="1"</button>
+          <button tabindex="2">tabIndex="2"</button>
+          <button tabindex="3">tabIndex="3"</button>
+          <button tabindex="0">tabIndex="0"</button>
+          <button>no tabIndex</button>
+        </p>
+        <p>
+          <button id="deactivate-positive-tabindex">
+            deactivate trap
+          </button>
+        </p>
+      </div>
+    </div>
+
     <p>
       <span aria-hidden="true" style="font-size:2em;vertical-align:middle;">☜</span>
       <a href="https://github.com/focus-trap/focus-trap" style="vertical-align:middle;">Return to the repository</a>
